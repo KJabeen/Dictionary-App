@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+    ;
+    background: rgb(33, 33, 33, 0.7);
+    background-image: url('./images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: 100%;
+}
+
+.card {
+    background: rgba(8, 8, 8, 0.95);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em;
+    letter-spacing: 0.12rem;
+    
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5em;
+
+}
+button {
+    margin: 0.1em;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border: none;
+    background: #0000002b;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+button:hover {
+    background: #7c7c7c6b;
+}
+button:active{
+    scale: 0.9;
+}
+input.search-bar {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.4em 0.9em;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 105%;
+    font-family: inherit;
+    width: calc(100%-100px);
+}
+.new-word{
+    margin: 0.1em;
+    border-radius: 10px;
+    height: 40px;
+    width: fit-content;
+    outline: none;
+    border: none;
+    background: #0000002b;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.new-word:hover{
+    text-decoration: underline ;
+}
+.text {
+    margin-left: 9px;
+    line-height: 2rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.speaker{
+   
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #0000002b;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.speaker:hover {
+    background: #7c7c7c6b;
+}
+.speaker:active{
+    scale: 0.9;
+}
+.dictionary.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+.hide{
+    display: none;
+}
+.dictionary.loading:after{
+    visibility: visible;
+    content: "Enter Word...";
+    position: absolute;
+    color: white;
+    top: 3px;
+    left: 5px;
+}
+
+        /* ====================================================================================== */
+
+        @media only screen and (max-width: 425px){
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                height: 100vh;
+                font-family:'Open Sans', sans-serif;
+                background-repeat:no-repeat;
+                background-size: cover;
+                font-size: 100%;
+                
+            }
+
+            
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    /* max-width: 400px; */
+    margin: 5em;
+    
+}
+
+
+
+ }
